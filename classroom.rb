@@ -8,7 +8,6 @@ class Classroom
 
   def add_student(student)
     @students.push(student) unless @students.include?(student)
-    # noinspection RubyResolve
     student.classroom = self
   end
 end
