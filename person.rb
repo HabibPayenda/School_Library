@@ -10,18 +10,19 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
   end
 
   def can_use_services?
-    if of_age? || @parent_permission
-      true
-    else
-      false
-    end
+    of_age? || @parent_permission
   end
 
   def correct_name
     @name
+  end
+
+  def add_rentals(person)
+    @rentals.push(person)
   end
 
   private
