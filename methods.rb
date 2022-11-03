@@ -1,5 +1,4 @@
 class Methods
-
   def list(type, title)
     text = "***************************************************\n"
     type.length.zero? && text += "There are no #{title} yet\n"
@@ -16,4 +15,3 @@ class Methods
     puts text
   end
 end
-

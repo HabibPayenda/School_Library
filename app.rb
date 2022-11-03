@@ -88,7 +88,7 @@ class App
     name = gets.chomp
     print 'Has parent permission? [Y/N]:'
     parent_permission = gets.chomp.upcase == 'Y'
-    student = Student.new(age, 'Unknown', name, parent_permission: parent_permission)
+    student = Student.new(age, 'Unknown', parent_permission, name)
     @people.push(student)
     puts "#{name} was added to the students list successfully"
   end
