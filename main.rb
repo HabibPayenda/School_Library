@@ -28,7 +28,7 @@ end
 
 def main
   app = App.new
-  start(app)
+  app.start_action
 end
 
 main
